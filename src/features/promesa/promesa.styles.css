@@ -1,0 +1,189 @@
+/* ============================================================
+   PROMESA
+   ============================================================ */
+
+.promesa {
+  padding: 6rem 0;
+  background: linear-gradient(to bottom, #fff, rgba(239, 246, 255, 0.5));
+  position: relative;
+  overflow: hidden;
+}
+
+.promesa__divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gray-200), transparent);
+}
+
+.promesa__container {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Header --- */
+.promesa__header {
+  margin-bottom: 2.5rem;
+}
+
+.promesa__icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--blue-100);
+  color: var(--icem-blue);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  transform: rotate(3deg);
+  box-shadow: var(--shadow-lg);
+}
+
+.promesa__header-icon {
+  transform: rotate(-3deg);
+}
+
+.promesa__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  margin-bottom: 1rem;
+}
+
+.promesa__subtitle {
+  color: var(--slate-500);
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+/* --- Card --- */
+.promesa__card {
+  background: #fff;
+  border: 1px solid var(--slate-100);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s;
+}
+
+.promesa__card:hover {
+  box-shadow: 0 25px 50px -12px rgba(10, 56, 108, 0.05);
+}
+
+.promesa__card-deco {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8rem;
+  height: 8rem;
+  background: linear-gradient(135deg, var(--blue-50), transparent);
+  border-bottom-left-radius: 100px;
+  margin-right: -2rem;
+  margin-top: -2rem;
+  opacity: 0.5;
+}
+
+/* --- Verse --- */
+.promesa__verse-display {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.3s;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promesa__verse-text {
+  font-size: 1.5rem;
+  color: var(--slate-700);
+  font-style: italic;
+  font-family: var(--font-heading);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.promesa__verse-ref {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--icem-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--blue-100);
+  padding-bottom: 0.5rem;
+}
+
+/* --- Explanation --- */
+.promesa__explanation {
+  background: rgba(239, 246, 255, 0.5);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--blue-100);
+  text-align: left;
+  width: 100%;
+}
+
+.promesa__explanation-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.promesa__sparkle-icon {
+  color: var(--yellow-500);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.promesa__explanation-text {
+  color: var(--slate-600);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* --- Button --- */
+.promesa__btn {
+  margin-top: 2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--slate-900);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  border: none;
+  box-shadow: var(--shadow-lg);
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.promesa__btn:hover {
+  background: var(--icem-blue);
+  box-shadow: 0 10px 15px -3px rgba(10, 56, 108, 0.2);
+}
+
+.promesa__btn-icon {
+  transition: transform 0.5s;
+}
+
+.promesa__btn:hover .promesa__btn-icon {
+  transform: rotate(180deg);
+}
+
+/* --- Responsive --- */
+@media (min-width: 768px) {
+  .promesa__verse-text {
+    font-size: 1.875rem;
+  }
+}

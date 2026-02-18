@@ -1,0 +1,327 @@
+/* ============================================================
+   PROGRAMAS
+   ============================================================ */
+
+.programas {
+  padding: 6rem 0;
+  background: #fff;
+  position: relative;
+}
+
+.programas__container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* --- Header --- */
+.programas__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid var(--gray-100);
+  padding-bottom: 2rem;
+}
+
+.programas__header-left {
+  margin-bottom: 1rem;
+}
+
+.programas__label {
+  color: var(--icem-blue);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.programas__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--slate-900);
+}
+
+.programas__header-desc {
+  color: var(--slate-500);
+  max-width: 28rem;
+}
+
+/* --- Grid --- */
+.programas__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* --- Card --- */
+.programas__card-outer {
+  background: var(--slate-50);
+  border-radius: 2.5rem;
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--slate-100);
+  transition: box-shadow 0.5s;
+}
+
+.programas__card-outer:hover {
+  box-shadow: 0 20px 40px -10px rgba(10, 56, 108, 0.05);
+}
+
+.programas__card-inner {
+  background: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+}
+
+.programas__card-inner--reverse {
+  flex-direction: column;
+}
+
+/* --- Media --- */
+.programas__media {
+  position: relative;
+  background: #000;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.programas__media-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* --- Placeholder (Programa 2) --- */
+.programas__media--placeholder {
+  background: var(--slate-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.programas__placeholder-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10, 56, 108, 0.8), rgba(15, 23, 42, 0.9));
+  z-index: 1;
+}
+
+.programas__placeholder-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: transform 0.7s;
+}
+
+.programas__card:hover .programas__placeholder-img {
+  transform: scale(1.05);
+}
+
+.programas__placeholder-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+}
+
+.programas__placeholder-avatar {
+  width: 5rem;
+  height: 5rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.programas__placeholder-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+}
+
+.programas__placeholder-text {
+  color: rgba(191, 219, 254, 0.7);
+  font-size: 0.875rem;
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+/* --- Info --- */
+.programas__info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.programas__info-bg-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3rem;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.programas__badges {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.programas__badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.programas__badge--live {
+  background: var(--red-500);
+  color: #fff;
+}
+
+.programas__badge--new {
+  background: var(--blue-100);
+  color: var(--icem-blue);
+}
+
+.programas__badge-meta {
+  color: var(--slate-400);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.programas__name {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--slate-800);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-family: var(--font-heading);
+}
+
+.programas__desc {
+  color: var(--slate-600);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+.programas__fallback-link {
+  font-size: 0.75rem;
+  color: var(--blue-500);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+
+.programas__fallback-link:hover {
+  color: var(--icem-blue);
+}
+
+.programas__episodes-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--icem-blue);
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.programas__episodes-text {
+  border-bottom: 2px solid rgba(10, 56, 108, 0.2);
+  padding-bottom: 2px;
+  transition: border-color 0.3s;
+}
+
+.programas__episodes-link:hover .programas__episodes-text {
+  border-color: var(--icem-blue);
+}
+
+.programas__episodes-arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.programas__episodes-link:hover .programas__episodes-arrow {
+  transform: translate(2px, -2px);
+}
+
+.programas__coming-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--slate-400);
+  font-weight: 600;
+  background: var(--slate-100);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  border: none;
+  cursor: not-allowed;
+  width: fit-content;
+}
+
+/* --- Responsive --- */
+@media (min-width: 768px) {
+  .programas__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .programas__header-left {
+    margin-bottom: 0;
+  }
+
+  .programas__header-desc {
+    text-align: left;
+  }
+
+  .programas__title {
+    font-size: 3rem;
+  }
+
+  .programas__card-inner {
+    flex-direction: row;
+  }
+
+  .programas__card-inner--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .programas__media {
+    width: 60%;
+    aspect-ratio: auto;
+    min-height: 22rem;
+  }
+
+  .programas__info {
+    width: 40%;
+    padding: 2rem 3rem;
+  }
+}

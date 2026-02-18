@@ -1,0 +1,97 @@
+/* ============================================================
+   COMUNIDAD
+   ============================================================ */
+
+.comunidad {
+  padding: 6rem 0;
+  background: var(--slate-50);
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- Background Shapes --- */
+.comunidad__bg-shapes {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.comunidad__shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+}
+
+.comunidad__shape--blue {
+  top: -20%;
+  left: -10%;
+  width: 50%;
+  height: 50%;
+  background: rgba(191, 219, 254, 0.3);
+}
+
+.comunidad__shape--purple {
+  bottom: 0;
+  right: -10%;
+  width: 40%;
+  height: 40%;
+  background: rgba(196, 181, 253, 0.2);
+}
+
+.comunidad__container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Header --- */
+.comunidad__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.comunidad__label {
+  color: var(--icem-blue);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.comunidad__title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--slate-900);
+  margin-bottom: 1rem;
+}
+
+.comunidad__subtitle {
+  color: var(--slate-500);
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+/* --- Grid --- */
+.comunidad__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .comunidad__title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .comunidad__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
