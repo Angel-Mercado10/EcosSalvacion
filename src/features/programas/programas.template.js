@@ -58,43 +58,46 @@ export function programasTemplate() {
             </div>
           </div>
 
-          <!-- PROGRAMA 2: REFLEXIONES DEL HOST -->
-          <div class="programas__card reveal">
-            <div class="programas__card-outer">
-              <div class="programas__card-inner programas__card-inner--reverse">
-                <!-- Placeholder visual -->
-                <div class="programas__media programas__media--placeholder">
-                  <div class="programas__placeholder-overlay"></div>
-                  <img src="https://images.unsplash.com/photo-1478737270239-2f02b77ac6d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                    alt="Estudio" class="programas__placeholder-img">
+         <!-- 
+PROGRAMA 2: REFLEXIONES DEL HOST
 
-                  <div class="programas__placeholder-content">
-                    <div class="programas__placeholder-avatar">
-                      ${icon("user", 40)}
-                    </div>
-                    <h4 class="programas__placeholder-title">Próximamente</h4>
-                    <p class="programas__placeholder-text">Una perspectiva más personal e íntima.</p>
-                  </div>
-                </div>
+<div class="programas__card reveal">
+  <div class="programas__card-outer">
+    <div class="programas__card-inner programas__card-inner--reverse">
+      <div class="programas__media programas__media--placeholder">
+        <div class="programas__placeholder-overlay"></div>
+        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77ac6d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+          alt="Estudio" class="programas__placeholder-img">
 
-                <!-- Info -->
-                <div class="programas__info">
-                  <div class="programas__badges">
-                    <span class="programas__badge programas__badge--new">Nuevo</span>
-                  </div>
-
-                  <h3 class="programas__name">Reflexiones del Host</h3>
-                  <p class="programas__desc">
-                    Cápsulas breves y directas al corazón. Opiniones pastorales sobre el acontecer diario bajo la lupa de las Escrituras.
-                  </p>
-
-                  <button class="programas__coming-soon" disabled>
-                    ${icon("clock", 16)} Espéralo pronto
-                  </button>
-                </div>
-              </div>
-            </div>
+        <div class="programas__placeholder-content">
+          <div class="programas__placeholder-avatar">
+            ${icon("user", 40)}
           </div>
+          <h4 class="programas__placeholder-title">Próximamente</h4>
+          <p class="programas__placeholder-text">Una perspectiva más personal e íntima.</p>
+        </div>
+      </div>
+
+      <div class="programas__info">
+        <div class="programas__badges">
+          <span class="programas__badge programas__badge--new">Nuevo</span>
+        </div>
+
+        <h3 class="programas__name">Reflexiones del Host</h3>
+        <p class="programas__desc">
+          Cápsulas breves y directas al corazón. Opiniones pastorales sobre el acontecer diario bajo la lupa de las Escrituras.
+        </p>
+
+        <button class="programas__coming-soon" disabled>
+          ${icon("clock", 16)} Espéralo pronto
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
+
 
         </div>
       </div>

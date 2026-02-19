@@ -9,12 +9,15 @@ export function navbarTemplate() {
           <!-- Logo -->
           <a href="#inicio" class="navbar__brand">
             <div class="navbar__logo-circle">
-              <img src="IMG_0628.JPG" alt="Logo ICEM" class="navbar__logo-img"
+              <img src="./src/assets/images/icem.jpeg" alt="Logo ICEM" class="navbar__logo-img"
                 onerror="this.src='https://placehold.co/40x40/0A386C/FFFFFF?text=ICEM'">
             </div>
             <div class="navbar__brand-text">
-              <span class="navbar__title">ICEM</span>
-              <span class="navbar__subtitle">Ecos de Salvación</span>
+              <div class="navbar__title-row">
+                <img src="./src/assets/images/ecosAzul.JPG" alt="Ecos de Salvación" class="navbar__ecos-logo">
+                <span class="navbar__title">Ecos de Salvación</span>
+              </div>
+              <span class="navbar__subtitle">ICEM Coacalco</span>
             </div>
           </a>
 

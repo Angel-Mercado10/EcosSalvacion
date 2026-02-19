@@ -13,8 +13,12 @@ export function heroTemplate() {
       <!-- Contenido -->
       <div class="hero__content reveal active">
         <div class="hero__badge animate-fade-in">
-          <span class="hero__badge-dot animate-dot-pulse"></span>
+          <img src="./src/assets/images/icem.jpeg" alt="ICEM" class="hero__badge-logo">
           Iglesia Cristiana Evangélica México
+        </div>
+
+        <div class="hero__logo-wrapper animate-fade-in">
+          <img src="./src/assets/images/ecosAzul.JPG" alt="Ecos de Salvación" class="hero__ecos-logo">
         </div>
 
         <h1 class="hero__title">

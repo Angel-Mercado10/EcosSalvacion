@@ -25,7 +25,7 @@ export function contactoTemplate() {
                 <div>
                   <h4 class="contacto__detail-title">Dirección</h4>
                   <p class="contacto__detail-text">
-                    Blvd. del Bosque Central Fracc, Bosques del Valle, 55717 San Francisco Coacalco, Méx.
+                   Boulevard Bosque Central, esquina Caobas. Fracc. Bosques del Valle, 1a. Sección. Coacalco, Estado de México.
                   </p>
                 </div>
               </div>

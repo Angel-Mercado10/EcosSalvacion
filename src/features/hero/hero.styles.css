@@ -69,11 +69,41 @@
   margin-bottom: 2rem;
 }
 
+.hero__badge-logo {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .hero__badge-dot {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   background-color: var(--blue-400);
+}
+
+/* --- Ecos Logo in Hero --- */
+.hero__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.hero__ecos-logo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(96, 165, 250, 0.3), 0 0 60px rgba(96, 165, 250, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  animation: logoPulse 3s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% { box-shadow: 0 0 30px rgba(96, 165, 250, 0.3), 0 0 60px rgba(96, 165, 250, 0.1); }
+  50% { box-shadow: 0 0 40px rgba(96, 165, 250, 0.5), 0 0 80px rgba(96, 165, 250, 0.2); }
 }
 
 /* --- Title --- */
@@ -190,6 +220,11 @@
   .hero__actions {
     flex-direction: row;
   }
+
+  .hero__ecos-logo {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -199,5 +234,11 @@
 
   .hero__title {
     font-size: 6rem;
+  }
+
+  .hero__ecos-logo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1.25rem;
   }
 }
